@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "wintersmith-livereload": "^0.2.2",
+    "wintersmith-nunjucks": "^1.1.0"
+  },
+  "private": true
+}

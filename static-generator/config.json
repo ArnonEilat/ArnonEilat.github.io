@@ -1,0 +1,11 @@
+{
+  "locals": {
+    "title": "Arnon Eilat — Curriculum Vitae",
+    "owner": "Arnon Eilat"
+  },
+  "plugins": [
+    "wintersmith-livereload",
+    "wintersmith-nunjucks"
+  ],
+  "output": "../"
+}
