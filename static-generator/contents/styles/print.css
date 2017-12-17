@@ -2,7 +2,7 @@
 
 @media print and (max-width:8.5in) { /* resize your window until the event is triggered */
 body{
-    /*background-color: #d9edf7 !important;*/
+/* background-color: #d9edf7 !important; */
 }
 }
 
@@ -22,7 +22,8 @@ body{
   }
 
 .print-page-break{
-    page-break-before: always;
+    margin-bottom: 30px;
+    page-break-after: always;
 }
 .hide-in-print{
     display: none;
@@ -33,6 +34,40 @@ body{
 }
 a[href]::after {
   display: none;
+}
+
+
+
+a[href]::after {
+  display: none;
+}
+
+
+.show-url-print{
+
+    display: inline-block;
+    color: #333333;  
+
+}
+.show-url-print::after {
+    content: " (" attr(href) ")";
+    display: inline !important;
+}
+
+.convert-to-url-print{
+    color: #333333;   
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.convert-to-url-print::before{
+    display: inline !important;
+    content: attr(href);
+    float: left;
+    margin: 0;
+    text-indent: 0;
+    word-break: break-all;
 }
 .personal-value,
 .personal-property{

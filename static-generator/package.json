@@ -1,7 +1,18 @@
 {
-  "dependencies": {
-    "wintersmith-livereload": "^0.2.2",
-    "wintersmith-nunjucks": "^1.1.0"
+  "private": true,
+  "scripts": {
+    "start": "wintersmith preview",
+    "build": "wintersmith build && node ./after-build.js"
   },
-  "private": true
+  "dependencies": {
+    "wintersmith": "*",
+    "wintersmith-livereload": "^0.2.2",
+    "wintersmith-nunjucks": "^1.1.0",
+    "wintersmith-less": "*"
+  },
+  "devDependencies": {
+    "chalk": "^2.3.0",
+    "clean-css": "^4.1.9",
+    "html-minifier": "^3.5.7"
+  }
 }
