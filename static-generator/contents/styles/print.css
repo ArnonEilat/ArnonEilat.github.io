@@ -2,7 +2,7 @@
 
 @media print and (max-width:8.5in) { /* resize your window until the event is triggered */
 body{
-/* background-color: #d9edf7 !important; */
+ /* background-color: #d9edf7 !important;  */
 }
 }
 
@@ -10,10 +10,15 @@ body{
     .print-page-break{
         display: none;
     }
+    .print-line-break{
+        display: none;
+    }
 }
 
 @media print {
-
+    .print-line-break{
+        display: block;
+    }
  @page {
     size: 210mm 297mm ;  /*landscape 
     /* you can also specify margins here: */

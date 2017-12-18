@@ -280,3 +280,14 @@ color: #1A1A1A;
     color: #FFF200;
     background: #6C005B;
 }
+
+
+@media (max-width: 480px){
+.hidden-mobile {
+    display: none !important;
+}
+}
+
+.qr-code{
+    width: 90px;
+}
