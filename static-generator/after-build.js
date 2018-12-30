@@ -38,7 +38,7 @@ const redundantfiles = [
     path.join(__dirname, '/../styles/bootstrap/.csscomb.json'),
     path.join(__dirname, '/../styles/bootstrap/.csslintrc'),
 ]
-redundantfiles.forEach(filePath => fs.unlink(filePath));
+redundantfiles.forEach(filePath => fs.unlink(filePath,()=>{}));
 
 
 const minifyCss = function minifyCss(path) {
