@@ -2,11 +2,12 @@
   "private": true,
   "scripts": {
     "start": "wintersmith preview",
-    "build": "wintersmith build && node ./after-build.js"
+    "build": "wintersmith build && node ./after-build.js",
+    "prettier": "npx prettier --write ."
   },
   "dependencies": {
     "wintersmith": "*",
-    "wintersmith-livereload": "^0.2.2",
+    "wintersmith-livereload": "^1.0.1",
     "wintersmith-nunjucks": "^1.1.0",
     "wintersmith-less": "*"
   },

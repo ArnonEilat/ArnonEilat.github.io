@@ -1,6 +1,6 @@
 ### Commands
-* wintersmith preview
-* wintersmith build
+
+- wintersmith preview
+- wintersmith build
 
 [http://wintersmith.io](http://wintersmith.io)
-

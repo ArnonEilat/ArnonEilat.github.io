@@ -1,84 +1,79 @@
-
-
-@media print and (max-width:8.5in) { /* resize your window until the event is triggered */
-body{
- /* background-color: #d9edf7 !important;  */
+@media print and (max-width: 8.5in) {
+  /* resize your window until the event is triggered */
+  body {
+    /* background-color: #d9edf7 !important;  */
+  }
 }
-}
 
-@media screen{
-    .print-page-break{
-        display: none;
-    }
-    .print-line-break{
-        display: none;
-    }
+@media screen {
+  .print-page-break {
+    display: none;
+  }
+  .print-line-break {
+    display: none;
+  }
 }
 
 @media print {
-    .print-line-break{
-        display: block;
-    }
- @page {
-    size: 210mm 297mm ;  /*landscape 
+  .print-line-break {
+    display: block;
+  }
+  @page {
+    size: 210mm 297mm; /*landscape 
     /* you can also specify margins here: */
     margin: 25mm;
     margin-right: 45mm; /* for compatibility with both A4 and Letter */
   }
 
-.print-page-break{
+  .print-page-break {
     margin-bottom: 30px;
     page-break-after: always;
-}
-.hide-in-print{
+  }
+  .hide-in-print {
     display: none;
-}
-  #header {  background: #f4f6f6 !important;}
-.col-xs-12 {
+  }
+  #header {
+    background: #f4f6f6 !important;
+  }
+  .col-xs-12 {
     width: 25%;
-}
-a[href]::after {
-  display: none;
-}
+  }
+  a[href]::after {
+    display: none;
+  }
 
+  a[href]::after {
+    display: none;
+  }
 
-
-a[href]::after {
-  display: none;
-}
-
-
-.show-url-print{
-
+  .show-url-print {
     display: inline-block;
-    color: #333333;  
-
-}
-.show-url-print::after {
+    color: #333333;
+  }
+  .show-url-print::after {
     content: " (" attr(href) ")";
     display: inline !important;
-}
+  }
 
-.convert-to-url-print{
-    color: #333333;   
+  .convert-to-url-print {
+    color: #333333;
     display: inline-block;
     overflow: hidden;
     text-indent: -9999px;
-}
+  }
 
-.convert-to-url-print::before{
+  .convert-to-url-print::before {
     display: inline !important;
     content: attr(href);
     float: left;
     margin: 0;
     text-indent: 0;
     word-break: break-all;
-}
-.personal-value,
-.personal-property{
+  }
+  .personal-value,
+  .personal-property {
     width: 100%;
-}
+  }
 
-/*.progress-bar-success {   background-color: #c9c9c9 !important;}*/
-
+  /*.progress-bar-success {   background-color: #c9c9c9 !important;}*/
 }

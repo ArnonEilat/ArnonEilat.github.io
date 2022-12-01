@@ -11,10 +11,7 @@
   "output": "../",
   "less": {
     "filename": "styles/bootstrap/bootstrap.less",
-    "paths": [
-      ".",
-      "styles/bootstrap"
-    ],
+    "paths": [".", "styles/bootstrap"],
     "exclude": [
       "styles/bootstrap/alerts.less",
       "styles/bootstrap/badges.less",
