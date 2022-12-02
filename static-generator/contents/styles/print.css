@@ -1,7 +1,7 @@
-@media print and (max-width: 8.5in) {
-  /* resize your window until the event is triggered */
-  body {
-    /* background-color: #d9edf7 !important;  */
+@media print {
+  .page-break-before {
+    margin-top: 40px;
+    page-break-before: always;
   }
 }
 
@@ -51,7 +51,7 @@
     color: #333333;
   }
   .show-url-print::after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
     display: inline !important;
   }
 
